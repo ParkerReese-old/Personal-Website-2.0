@@ -1,7 +1,10 @@
+@import "../../_colors";
+
 .traits-chips {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .title {
@@ -14,3 +17,41 @@
     margin-right: auto;
     display: flex;
 }
+
+.quote-and-personality {
+    display: flex;
+}
+
+.software-text {
+    font-size: 1.3rem;
+    font-family: serif;
+    margin-left: 15px;
+    width: 50%;
+}
+
+.data-quote {
+    padding-right: 15px;
+    border-right: 1px solid $light-grey;
+    font-size: 3.5rem;
+    width: 50%;
+
+    .by-sheen {
+        vertical-align: middle;
+        font-size: 0.9rem;
+    }
+}
+
+.about-me-image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+
+    .centered-text-over-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
