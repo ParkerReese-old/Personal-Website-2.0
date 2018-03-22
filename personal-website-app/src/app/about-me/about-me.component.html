@@ -6,7 +6,7 @@
     <img class="parker-image" align="middle" src="../../assets/about-me/parker_reese.jpg" alt="Parker Reese Portrait">
   </div>
   <mat-chip-list class="traits-chips">
-    <mat-chip *ngFor="let trait of traitsList" selected="true" [color]="primary"> {{trait}} </mat-chip>
+    <mat-chip *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)"> {{trait}} </mat-chip>
   </mat-chip-list>
   <div class="quote-and-personality">
     <div class="data-quote">
@@ -16,7 +16,7 @@
       </span>
     </div>
     <p class="software-text">
-      As a software devloper I spend a lot of time staring at a computers screen. 50% of the time my code doesn't work and I wonder
+      As a software devloper I spend a lot of time staring at a computer screen. 50% of the time my code doesn't work and I wonder
       why. The other 50% my code does work and I wonder how. But when I'm not coding...
     </p>
   </div>
