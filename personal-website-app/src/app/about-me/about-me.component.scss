@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
 .title {
@@ -19,10 +19,13 @@
 }
 
 .quote-and-personality {
+    margin-bottom: 2rem;
     display: flex;
 }
 
 .software-text {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     font-size: 1.3rem;
     font-family: serif;
     margin-left: 15px;
@@ -30,25 +33,35 @@
 }
 
 .data-quote {
+    display: inline-block;
+    text-align: center;
     padding-right: 15px;
     border-right: 1px solid $light-grey;
     font-size: 3.5rem;
     width: 50%;
+}
 
-    .by-sheen {
-        vertical-align: middle;
-        font-size: 0.9rem;
-    }
+.by-sheen {
+    display: flex;
+    vertical-align: middle;
+    font-size: 0.9rem;
 }
 
 .about-me-image-container {
+    width: 100%;
+    margin-bottom: 0.7rem;
     position: relative;
     text-align: center;
     color: white;
 
+    .about-me-image {
+        width: 100%;
+    }
+
     .centered-text-over-image {
+        font-size: 1.8rem;
         position: absolute;
-        top: 50%;
+        top: 85%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
