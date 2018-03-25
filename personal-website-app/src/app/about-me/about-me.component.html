@@ -2,8 +2,9 @@
   <h1 class="title">
     Hi! My name is Parker.
   </h1>
-  <div class="portrait-and-text">
+  <div class="portrait">
     <img class="parker-image" align="middle" src="../../assets/about-me/parker_reese.jpg" alt="Parker Reese Portrait">
+    <img class="pretty-cool-guy" align="middle" src="../../assets/about-me/cool-guy.png" alt="Pretty Cool Guy">
   </div>
   <mat-chip-list class="traits-chips">
     <mat-chip *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)"> 
