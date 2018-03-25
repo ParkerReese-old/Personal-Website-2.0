@@ -1,9 +1,6 @@
-:host {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-}
-
 .main-card {
     width: 60%;
+    .mat-tab-labels {
+        justify-content: center;
+    }
 }
