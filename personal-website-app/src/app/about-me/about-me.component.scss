@@ -10,7 +10,10 @@
 }
 
 .title {
-    font-size: 32px;
+    @media only screen and (max-width: 700px) {
+        font-size: 30px;
+    }
+    font-size: 38px;
     font-weight: 700;
     text-align: center;
     margin: 1.5em 0 0.3em;
@@ -19,8 +22,24 @@
 .portrait {
     display: flex;
     justify-content: center;
+    width: 100%;
 
     .parker-image {
+        @media only screen and (max-width: 1500px) {
+            width: 50%;
+        }
+        @media only screen and (max-width: 1350px) {
+            width: 55%;
+        }
+        @media only screen and (max-width: 1100px) {
+            width: 40%;
+        }
+        @media only screen and (max-width: 850px) {
+            width: 55%;
+        }
+        @media only screen and (max-width: 600px) {
+            width: 65%;
+        }
         width: 40%;
         height: 40%;
     }
@@ -30,7 +49,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 0.7em;
     margin-bottom: 4em;
 
     .chip-list1 {
@@ -48,12 +67,19 @@
 }
 
 .never-argue {
+    @media only screen and (max-width: 650px) {
+        font-size: 30px;
+    }
+
     padding-top: 0.4em;
     font-size: 50px;
     text-align: center;
 }
 
 .by-sheen {
+    @media only screen and (max-width: 650px) {
+        font-size: 12px;
+    }
     font-size: 16px;
     font-weight: 300;
     text-align: center;
