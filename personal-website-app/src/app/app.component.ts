@@ -7,6 +7,12 @@ import { ViewEncapsulation } from '@angular/core';
   styleUrls: ['./app.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
+
 export class AppComponent {
-  title = 'appll';
+  tabIndex = 0;
+
+  changeTabIndex($event) {
+    this.tabIndex = $event;
+  }
+
 }

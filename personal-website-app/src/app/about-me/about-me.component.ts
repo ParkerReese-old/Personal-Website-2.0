@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { OnInit } from '@angular/core';
+import { EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'parker-about',
@@ -7,6 +8,8 @@ import { OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
+  @Output() changeTabIndex = new EventEmitter();
+
   traitsList = ['Hard Working', 'Motivated', 'Team Player', 'Open Minded', 'Data Driven', 'Independant'];
   colorMap: Map<string, string> = new Map();
   greetingCompleted = false;

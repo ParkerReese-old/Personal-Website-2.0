@@ -67,14 +67,7 @@
     font-size: 17px;
 }
 
-.about-me-image-container {
-    width: 100%;
-    margin-bottom: 0.7em;
-    position: relative;
-
-    .about-me-image {
-        width: 100%;
-    }
+.navigation-buttons {
+    display: flex;
+    flex-direction: row-reverse;
 }
-
-

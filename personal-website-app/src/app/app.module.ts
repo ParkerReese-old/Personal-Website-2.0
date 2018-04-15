@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { TypingAnimationDirective } from 'angular-typing-animation';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatTabsModule,
     BrowserAnimationsModule,
     MatTooltipModule,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
