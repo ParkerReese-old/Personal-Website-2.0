@@ -7,9 +7,6 @@
     margin-bottom: 4em;
 }
 
-.chip {
-}
-
 .title {
     font-size: 32px;
     font-weight: 700;
@@ -36,24 +33,23 @@
     position: relative;
     margin-right: 30%;
     margin-left: 30%;
-    padding-bottom: 1em;
 }
 
 .divider-controller-2 {
     position: relative;
     margin-right: 15%;
     margin-left: 15%;
-    padding-top: 2em;
 }
 
 .data-quote {
     display: flex;
     text-align: center;
     padding-right: 15px;
-    font-size: 3.5em;
+    font-size: 50px;
 }
 
 .never-argue {
+    padding-top: 0.4em;
     font-size: 50px;
     text-align: center;
 }
@@ -62,25 +58,22 @@
     font-size: 16px;
     font-weight: 300;
     text-align: center;
+    padding-bottom: 2em;
+}
+
+.about-me-paragraphs {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    font-size: 17px;
 }
 
 .about-me-image-container {
     width: 100%;
     margin-bottom: 0.7em;
     position: relative;
-    text-align: center;
-    color: white;
 
     .about-me-image {
         width: 100%;
-    }
-
-    .centered-text-over-image {
-        font-size: 1.8em;
-        position: absolute;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 }
 

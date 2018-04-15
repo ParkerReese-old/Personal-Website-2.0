@@ -13,11 +13,11 @@
       <img class="parker-image" align="middle" src="../../assets/about-me/parker_reese.jpg" alt="Parker Reese Portrait" matTooltip="Pretty cool guy! =>"
         matTooltipPosition="before">
     </div>
-      <mat-chip-list class="traits-chips">
-        <mat-chip class="chip" *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
-          {{trait}}
-        </mat-chip>
-      </mat-chip-list>
+    <mat-chip-list class="traits-chips">
+      <mat-chip class="chip" *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
+        {{trait}}
+      </mat-chip>
+    </mat-chip-list>
     <div class="divider-controller-1">
       <mat-divider></mat-divider>
     </div>
@@ -30,17 +30,26 @@
     <div class="divider-controller-2">
       <mat-divider></mat-divider>
     </div>
-    <p class="software-text">
-      As a software devloper I spend a lot of time staring at a computer screen. 50% of the time my code doesn't work and I wonder
-      why. The other 50% my code does work and I wonder how. But when I'm not coding...
-    </p>
+    <div class="about-me-paragraphs">
+      <p>
+        So! You want to know a little bit about me? Well, my name is Parker Reese and I am currently Interning as a Software Developer
+        at Vendasta. I have completed three years of my Computer Science degree and am looking forward to getting that very
+        expensive piece of paper with my name on it. I love to do all the usual things such as Netflix, video games, archery
+        dodgeball, and tagging friends in memes. I also love to do many unusual things such as putting ketchup on my mac-n-cheese,
+        putting pineapple on my pizza, and using the signal light when I drive.
+      </p>
+      <p class="goal-paragraph">
+        I used to have the life goal of working on a new and exciting technology amongst a team of skilled developers. Since I am
+        accomplishing that goal every day with my Internship; I’ve decided to take on a new goal: make as much money as possible
+        while sitting at home, on my computer, in my underwear. This is, in my opinion, the highest form of success known
+        to humankind.
+      </p>
+    </div>
     <div class="about-me-image-container">
       <img src="../../assets/about-me/parker_n64_croped.jpg" class="about-me-image" alt="Parker Playing N64">
-      <div class="centered-text-over-image">I like to play games!</div>
     </div>
     <div class="about-me-image-container">
       <img src="../../assets/about-me/parker_outside_game.jpg" class="about-me-image" alt="Parker Playing Game I Don't Know The Name Of">
-      <div class="centered-text-over-image">Sometimes I go outside!</div>
     </div>
   </div>
 </mat-card-content>
