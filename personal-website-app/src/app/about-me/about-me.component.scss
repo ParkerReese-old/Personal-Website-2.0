@@ -1,5 +1,14 @@
 @import "../../_colors";
 
+::ng-deep {
+    .mat-chip-list-wrapper {
+        justify-content: center;
+        .mat-chip {
+            margin-bottom: 0.2em;
+        }
+    }
+}
+
 .title {
     font-size: 32px;
     font-weight: 700;
@@ -20,8 +29,16 @@
 .traits-chips {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 10px;
     margin-bottom: 4em;
+
+    .chip-list1 {
+        margin-bottom: 0.2em;
+    }
+    .chip-list2 {
+        margin-left: 8px;
+    }
 }
 
 .divider-controller-1 {

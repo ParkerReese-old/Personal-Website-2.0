@@ -10,12 +10,16 @@ import { EventEmitter } from '@angular/core';
 export class AboutMeComponent implements OnInit {
   @Output() changeTabIndex = new EventEmitter();
 
-  traitsList = ['Hard Working', 'Motivated', 'Team Player', 'Open Minded', 'Data Driven', 'Independant'];
+  traitsList1 = ['Hard Working', 'Motivated', 'Team Player'];
+  traitsList2 = ['Open Minded', 'Data Driven', 'Independant'];
   colorMap: Map<string, string> = new Map();
   greetingCompleted = false;
 
   ngOnInit() {
-    this.traitsList.forEach(trait => {
+    this.traitsList1.forEach(trait => {
+      this.colorMap.set(trait, 'primary');
+    });
+    this.traitsList2.forEach(trait => {
       this.colorMap.set(trait, 'primary');
     });
   }

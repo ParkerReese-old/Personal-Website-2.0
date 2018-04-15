@@ -12,11 +12,18 @@
     <img class="parker-image" align="middle" src="../../assets/about-me/parker_reese.jpg" alt="Parker Reese Portrait" matTooltip="Pretty cool guy! =>"
       matTooltipPosition="before">
   </div>
-  <mat-chip-list class="traits-chips">
-    <mat-chip *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
-      {{trait}}
-    </mat-chip>
-  </mat-chip-list>
+  <div class="traits-chips">
+    <mat-chip-list class="chip-list1">
+      <mat-chip *ngFor="let trait of traitsList1" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
+        {{trait}}
+      </mat-chip>
+    </mat-chip-list>
+    <mat-chip-list class="chip-list2">
+      <mat-chip *ngFor="let trait of traitsList2" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
+        {{trait}}
+      </mat-chip>
+    </mat-chip-list>
+  </div>
   <div class="divider-controller-1">
     <mat-divider></mat-divider>
   </div>
