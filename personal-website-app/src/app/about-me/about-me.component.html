@@ -1,14 +1,20 @@
 <div id="about-me">
-  <h1 class="title">
-    Hi! My name is Parker.
-  </h1>
+  <div class="title">
+    <span typingAnimation [typeSpeed]="80" [startDelay]="800" [hideCursorOnComplete]="true" (complete)="onFirstTypingAnimationComplete()">
+      Hi!
+    </span>
+    <span *ngIf="greetingCompleted" typingAnimation [typeSpeed]="60" [startDelay]="1300" [hideCursorOnComplete]="true">
+      My name is Parker.
+    </span>
+  </div>
+
   <div class="portrait">
-    <img class="parker-image" align="middle" src="../../assets/about-me/parker_reese.jpg" alt="Parker Reese Portrait">
-    <img class="pretty-cool-guy" align="middle" src="../../assets/about-me/cool-guy.png" alt="Pretty Cool Guy">
+    <img class="parker-image" align="middle" src="../../assets/about-me/parker_reese.jpg" alt="Parker Reese Portrait" matTooltip="Pretty cool guy! >"
+      matTooltipPosition="before">
   </div>
   <mat-chip-list class="traits-chips">
-    <mat-chip *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)"> 
-      {{trait}} 
+    <mat-chip *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
+      {{trait}}
     </mat-chip>
   </mat-chip-list>
   <div class="quote-and-personality">

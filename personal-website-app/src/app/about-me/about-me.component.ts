@@ -9,6 +9,7 @@ import { OnInit } from '@angular/core';
 export class AboutMeComponent implements OnInit {
   traitsList = ['Hard Working', 'Motivated', 'Team Player', 'Open Minded', 'Data Driven', 'Independant'];
   colorMap: Map<string, string> = new Map();
+  greetingCompleted = false;
 
   ngOnInit() {
     this.traitsList.forEach(trait => {
@@ -21,4 +22,7 @@ export class AboutMeComponent implements OnInit {
     this.colorMap.set(trait, this.colorMap.get(trait) === 'primary' ? 'accent' : 'primary');
   }
 
+  onFirstTypingAnimationComplete () {
+    this.greetingCompleted = true;
+  }
 }

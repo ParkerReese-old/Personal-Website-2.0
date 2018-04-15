@@ -6,18 +6,22 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { TypingAnimationDirective } from 'angular-typing-animation'
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    TypingAnimationDirective
   ],
   imports: [
     BrowserModule,
     MatCardModule,
     MatChipsModule,
     MatTabsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
