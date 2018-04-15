@@ -1,7 +1,6 @@
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 parker-root {
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
 }
