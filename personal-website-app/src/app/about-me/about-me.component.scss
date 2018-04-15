@@ -65,9 +65,17 @@
     margin-top: 2.5em;
     margin-bottom: 2.5em;
     font-size: 17px;
+    p { 
+        text-indent: 2em;
+    }
+}
+
+.about-me-image {
+    width: 100%;
 }
 
 .navigation-buttons {
     display: flex;
     flex-direction: row-reverse;
+    margin-top: 2em;
 }
