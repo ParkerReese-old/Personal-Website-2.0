@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { TypingAnimationDirective } from 'angular-typing-animation'
+import { TypingAnimationDirective } from 'angular-typing-animation';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TypingAnimationDirective } from 'angular-typing-animation'
     MatChipsModule,
     MatTabsModule,
     BrowserAnimationsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,40 +1,46 @@
-<div id="about-me">
-  <div class="title">
-    <span typingAnimation [typeSpeed]="80" [startDelay]="800" [hideCursorOnComplete]="true" (complete)="onFirstTypingAnimationComplete()">
-      Hi!
-    </span>
-    <span *ngIf="greetingCompleted" typingAnimation [typeSpeed]="60" [startDelay]="1300" [hideCursorOnComplete]="true">
-      My name is Parker.
-    </span>
-  </div>
-
-  <div class="portrait">
-    <img class="parker-image" align="middle" src="../../assets/about-me/parker_reese.jpg" alt="Parker Reese Portrait" matTooltip="Pretty cool guy! >"
-      matTooltipPosition="before">
-  </div>
-  <mat-chip-list class="traits-chips">
-    <mat-chip *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
-      {{trait}}
-    </mat-chip>
-  </mat-chip-list>
-  <div class="quote-and-personality">
-    <div class="data-quote">
-      "Never argue with the data."
-      <span class="by-sheen">
-        <i>-Sheen, from Jimmy Nuetron</i>
+<mat-card-content>
+  <div id="about-me">
+    <div class="title">
+      <span typingAnimation [typeSpeed]="80" [startDelay]="800" [hideCursorOnComplete]="true" (complete)="onFirstTypingAnimationComplete()">
+        Hi!
+      </span>
+      <span *ngIf="greetingCompleted" typingAnimation [typeSpeed]="60" [startDelay]="1300" [hideCursorOnComplete]="true">
+        My name is Parker.
       </span>
     </div>
-    <span class="software-text">
+
+    <div class="portrait">
+      <img class="parker-image" align="middle" src="../../assets/about-me/parker_reese.jpg" alt="Parker Reese Portrait" matTooltip="Pretty cool guy! =>"
+        matTooltipPosition="before">
+    </div>
+      <mat-chip-list class="traits-chips">
+        <mat-chip class="chip" *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
+          {{trait}}
+        </mat-chip>
+      </mat-chip-list>
+    <div class="divider-controller-1">
+      <mat-divider></mat-divider>
+    </div>
+    <div class="never-argue">
+      "Never argue with the data."
+    </div>
+    <div class="by-sheen">
+      <i>-Sheen, from Jimmy Nuetron</i>
+    </div>
+    <div class="divider-controller-2">
+      <mat-divider></mat-divider>
+    </div>
+    <p class="software-text">
       As a software devloper I spend a lot of time staring at a computer screen. 50% of the time my code doesn't work and I wonder
       why. The other 50% my code does work and I wonder how. But when I'm not coding...
-    </span>
+    </p>
+    <div class="about-me-image-container">
+      <img src="../../assets/about-me/parker_n64_croped.jpg" class="about-me-image" alt="Parker Playing N64">
+      <div class="centered-text-over-image">I like to play games!</div>
+    </div>
+    <div class="about-me-image-container">
+      <img src="../../assets/about-me/parker_outside_game.jpg" class="about-me-image" alt="Parker Playing Game I Don't Know The Name Of">
+      <div class="centered-text-over-image">Sometimes I go outside!</div>
+    </div>
   </div>
-  <div class="about-me-image-container">
-    <img src="../../assets/about-me/parker_n64_croped.jpg" class="about-me-image" alt="Parker Playing N64">
-    <div class="centered-text-over-image">I like to play games!</div>
-  </div>
-  <div class="about-me-image-container">
-    <img src="../../assets/about-me/parker_outside_game.jpg" class="about-me-image" alt="Parker Playing Game I Don't Know The Name Of">
-    <div class="centered-text-over-image">Sometimes I go outside!</div>
-  </div>
-</div>
+</mat-card-content>
