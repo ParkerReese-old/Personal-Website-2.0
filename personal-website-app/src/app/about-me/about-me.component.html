@@ -13,7 +13,7 @@
       matTooltipPosition="before">
   </div>
   <mat-chip-list class="traits-chips">
-    <mat-chip class="chip" *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
+    <mat-chip *ngFor="let trait of traitsList" selected="true" [color]="colorMap.get(trait)" (click)="changeChipColor($event)">
       {{trait}}
     </mat-chip>
   </mat-chip-list>
@@ -37,7 +37,7 @@
       dodgeball, and tagging friends in memes. I also love to do many unusual things such as putting ketchup on my mac-n-cheese,
       putting pineapple on my pizza, and using the signal light when I drive.
     </p>
-    <p class="goal-paragraph">
+    <p>
       I used to have the life goal of working on a new and exciting technology amongst a team of skilled developers. Since I am
       accomplishing that goal every day with my Internship; I’ve decided to take on a new goal: make as much money as possible
       while sitting at home, on my computer, in my underwear. This is, in my opinion, the highest form of success known to

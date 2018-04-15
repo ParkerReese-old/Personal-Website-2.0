@@ -1,12 +1,5 @@
 @import "../../_colors";
 
-.traits-chips {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 4em;
-}
-
 .title {
     font-size: 32px;
     font-weight: 700;
@@ -17,35 +10,24 @@
 .portrait {
     display: flex;
     justify-content: center;
+
+    .parker-image {
+        width: 40%;
+        height: 40%;
+    }
 }
 
-.parker-image {
-    width: 40%;
-    height: 40%;
-}
-
-.quote-and-personality {
-    margin-bottom: 2em;
+.traits-chips {
     display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 4em;
 }
 
 .divider-controller-1 {
     position: relative;
     margin-right: 30%;
     margin-left: 30%;
-}
-
-.divider-controller-2 {
-    position: relative;
-    margin-right: 15%;
-    margin-left: 15%;
-}
-
-.data-quote {
-    display: flex;
-    text-align: center;
-    padding-right: 15px;
-    font-size: 50px;
 }
 
 .never-argue {
@@ -59,6 +41,12 @@
     font-weight: 300;
     text-align: center;
     padding-bottom: 2em;
+}
+
+.divider-controller-2 {
+    position: relative;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 .about-me-paragraphs {
