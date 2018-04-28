@@ -4,3 +4,10 @@ parker-root {
     display: flex;
     justify-content: center;
 }
+
+.navigation-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 2em;
+    justify-content: space-between;
+}

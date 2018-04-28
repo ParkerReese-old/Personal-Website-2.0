@@ -10,11 +10,13 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { TypingAnimationDirective } from 'angular-typing-animation';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
+    ExperienceComponent,
     TypingAnimationDirective
   ],
   imports: [
