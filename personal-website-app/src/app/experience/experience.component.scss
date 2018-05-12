@@ -1,3 +1,21 @@
 .image {
     width: 100%;
 }
+
+.bottom-left-img-text {
+    position: absolute;
+    font-size: 24px;
+    bottom: 1em;
+    left: 2em;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.u-of-s-description {
+    font-size: 17px;
+    text-indent: 2em;
+}
