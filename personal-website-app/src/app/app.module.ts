@@ -11,12 +11,14 @@ import { TypingAnimationDirective } from 'angular-typing-animation';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
     ExperienceComponent,
+    ProjectsComponent,
     TypingAnimationDirective
   ],
   imports: [

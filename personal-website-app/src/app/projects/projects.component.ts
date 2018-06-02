@@ -3,10 +3,11 @@ import { OnInit } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'parker-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss']
+  selector: 'parker-projects',
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
-export class ExperienceComponent {
+export class ProjectsComponent {
   @Output() changeTabIndex = new EventEmitter();
+
 }
