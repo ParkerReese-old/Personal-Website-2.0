@@ -10,9 +10,12 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { TypingAnimationDirective } from 'angular-typing-animation';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ContactComponent } from './contact/contact.component';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutMeComponent,
     ExperienceComponent,
     ProjectsComponent,
+    ContactComponent,
     TypingAnimationDirective
   ],
   imports: [
@@ -31,7 +35,10 @@ import { ProjectsComponent } from './projects/projects.component';
     MatTooltipModule,
     MatDividerModule,
     MatButtonModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
