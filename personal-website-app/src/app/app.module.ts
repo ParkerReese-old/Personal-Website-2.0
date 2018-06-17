@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { TypingAnimationDirective } from 'angular-typing-animation';
+import { TypingAnimationModule } from 'angular-typing-animation';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -25,8 +25,7 @@ import { NavBarComponent } from './shared/nav-bar.component';
     ExperienceComponent,
     ProjectsComponent,
     ContactComponent,
-    NavBarComponent,
-    TypingAnimationDirective
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +39,8 @@ import { NavBarComponent } from './shared/nav-bar.component';
     MatExpansionModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TypingAnimationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
