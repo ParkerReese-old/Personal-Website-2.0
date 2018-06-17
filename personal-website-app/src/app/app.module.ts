@@ -16,6 +16,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavBarComponent } from './shared/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ExperienceComponent,
     ProjectsComponent,
     ContactComponent,
+    NavBarComponent,
     TypingAnimationDirective
   ],
   imports: [

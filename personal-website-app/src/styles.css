@@ -9,5 +9,10 @@ parker-root {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 2em;
+    margin-bottom: 2em;
     justify-content: space-between;
+}
+
+.mat-card-actions, .mat-card-content, .mat-card-subtitle, .mat-card-title {
+    margin-bottom: 0 !important;
 }

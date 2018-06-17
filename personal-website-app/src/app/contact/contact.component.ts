@@ -1,7 +1,7 @@
 import { Component, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
-import {FormControl, FormGroupDirective, NgForm, Validators, FormGroup} from '@angular/forms';
-import {ErrorStateMatcher} from '@angular/material/core';
+import { FormControl, FormGroupDirective, NgForm, Validators, FormGroup } from '@angular/forms';
+import { ErrorStateMatcher } from '@angular/material/core';
 
 /** Error when invalid control is touched, or submitted. */
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -26,16 +26,16 @@ export class ContactComponent {
   nameFormControl = new FormControl('', [Validators.required]);
   messageFormControl = new FormControl('', [Validators.required]);
 
-  formGroup = new FormGroup({name: this.nameFormControl, email: this.emailFormControl, message: this.messageFormControl});
+  formGroup = new FormGroup({ name: this.nameFormControl, email: this.emailFormControl, message: this.messageFormControl });
 
   matcher = new MyErrorStateMatcher();
 
-onSubmit(formGroup: FormGroup) {
-  const controls = formGroup.controls;
-  const name = controls.name.value;
-  const email = controls.email.value;
-  const message = controls.message.value;
+  onSubmit(formGroup: FormGroup) {
+    const controls = formGroup.controls;
+    const name = controls.name.value;
+    const email = controls.email.value;
+    const message = controls.message.value;
 
-}
+  }
 
 }
