@@ -72,7 +72,8 @@
     </mat-expansion-panel>
   </mat-accordion>
 
-  <div class="previous-button">
+  <div class="navigation-buttons">
+    <button mat-raised-button color="primary" (click)="changeTabIndex.next(3)">Next</button>
     <button mat-raised-button (click)="changeTabIndex.next(1)">Previous</button>
   </div>
   <parker-nav-bar></parker-nav-bar>

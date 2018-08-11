@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavBarComponent } from './shared/nav-bar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { NavBarComponent } from './shared/nav-bar.component';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    TypingAnimationModule
+    TypingAnimationModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
