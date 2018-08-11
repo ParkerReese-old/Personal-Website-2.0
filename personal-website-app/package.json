@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-for-usask": "ng build --prod --build-optimizer --base-href=http://homepage.usask.ca/~par590/"
   },
   "private": true,
   "dependencies": {

@@ -2,7 +2,8 @@ import { Component, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { FormControl, FormGroupDirective, NgForm, Validators, FormGroup } from '@angular/forms';
 import { ErrorStateMatcher } from '@angular/material/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { MatSnackBar } from '@angular/material';
 
 /** Error when invalid control is touched, or submitted. */
 export class MyErrorStateMatcher implements ErrorStateMatcher {
@@ -20,7 +21,9 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
 export class ContactComponent {
   @Output() changeTabIndex = new EventEmitter();
 
-  constructor(private http: HttpClient) {
+  sendingMessage = false;
+
+  constructor(private http: HttpClient, private snack: MatSnackBar) {
   }
 
   emailFormControl = new FormControl('', [
@@ -35,6 +38,7 @@ export class ContactComponent {
   matcher = new MyErrorStateMatcher();
 
   onSubmit(formGroup: FormGroup) {
+    this.sendingMessage = true;
     const controls = formGroup.controls;
     const name = controls.name.value;
     const email = controls.email.value;
@@ -44,14 +48,24 @@ export class ContactComponent {
     const url = 'https://docs.google.com/forms/d/e/1FAIpQLSdDEL4XF9pxaFa99IbKs7Iy3dMjImJ9a_UfdFt1CQ_nSgemOA/formResponse';
 
     this.http.post(url, body, { 'headers': { 'Content-Type': 'application/x-www-form-urlencoded' }, withCredentials: true }).subscribe(
-      resp => {
-        console.log(resp);
-        alert('success!');
-      }, resp => {
-        console.log(resp);
-        alert('error!');
+      () => {
+        this.messageSubmitted();
+      }, () => {
+        this.messageSubmitted();
       });
+  }
 
+  messageSubmitted(): void {
+    this.snack.open('Thank you for the message!', null, {duration: 2000});
+
+    this.formGroup.reset();
+    this.formGroup.markAsUntouched();
+    Object.keys(this.formGroup.controls).forEach((name) => {
+      const control = this.formGroup.controls[name];
+      control.setErrors(null);
+    });
+    this.sendingMessage = false;
+    return;
   }
 
 }
